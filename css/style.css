@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Plus jakarta sans;
+}
+
+:root {
+    --primary-color: #092ED7;
+    --surface-color: #CCDEFF;
+    --accent-color: #10264F;
+    --background-color: #FFFFFF;
+    --color-text-primary: #10264F;
+    --color-text-secondary: #CCDEFF;
+    --color-border: #CCDEFF;
+}
+
+#logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+#icono2 {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#cabecera {
+    background-color: var(--surface-color);
+    padding: 1rem;
+}
+
+#cabecera ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+#cabecera ul li:nth-child(2) {
+    margin-left: auto;
+}
+
+#cabecera a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#cabecera a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.75rem;
+    color: var(--color-text-primary);
+    padding: 1rem 0;
+
+}
+
+h2 {
+    font-size: 2.25rem;
+    color: var(--color-text-primary);
+    padding: 1rem 0;
+
+}
+
+main section {
+    max-width: 65%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+#cajaHotel {
+    background-color: var(--background-color);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    padding: 2 rem;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cajaHotel h3 {
+    color: var(--color-text-primary);
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+#cajaHotel button,
+#cajaHotel .boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: 1px solid var(--color-border);
+    border-radius: 0.5rem;
+    width: 30%;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
