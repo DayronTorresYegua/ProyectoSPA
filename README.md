@@ -38,6 +38,6 @@
 | Inicio de sesión | `pages/login.html` | Sin sesión | Correo y contraseña | Pendiente |
 | Inicio con hotel | `index.html` | Usuario con sesión | Bienvenida, hotel asignado y botón «Acceder» | Implementada |
 | Inicio sin hotel | `index.html` | Usuario con sesión | Bienvenida y aviso «No hay hoteles asignados» | Pendiente |
-| Mis tareas | `pages/tareasEmpleado.html` | Empleado con hotel | Tareas con su estado y botón para completarlas | Estructura creada |
+| Mis tareas | `pages/tareasEmpleado.html` | Empleado con hotel | Tareas con su estado y botón para completarlas | Implementada |
 | Acciones | `pages/acciones.html` | Jefe con hotel | Botones de gestión del hotel | Pendiente |
 | Crear hotel | `pages/crearHotel.html` | Jefe sin hotel | Creacion del hotel | Pendiente |
