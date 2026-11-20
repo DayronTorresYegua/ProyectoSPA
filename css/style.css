@@ -15,39 +15,39 @@
     --color-border: #CCDEFF;
 }
 
-#logo {
-    width: 4rem;
-    height: 4rem;
-}
-
-#icono2 {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-#cabecera {
+.cabecera {
     background-color: var(--surface-color);
     padding: 1rem;
 }
 
-#cabecera ul {
+.cabecera__lista {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 1rem;
 }
 
-#cabecera ul li:nth-child(2) {
+.cabecera__lista li:nth-child(2) {
     margin-left: auto;
 }
 
-#cabecera a {
+.cabecera__logo {
+    width: 4rem;
+    height: 4rem;
+}
+
+.cabecera__icono {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cabecera a {
     color: var(--color-text-primary);
     text-decoration: none;
     font-weight: 600;
 }
 
-#cabecera a:hover {
+.cabecera a:hover {
     text-decoration: underline;
 }
 
@@ -70,7 +70,8 @@ main section {
     margin: 2rem auto;
     padding: 0 1rem;
 }
-#cajaHotel {
+
+.caja-hotel {
     background-color: var(--background-color);
     border: 1px solid var(--color-border);
     border-radius: 0.5rem;
@@ -82,7 +83,7 @@ main section {
     align-items: center;
 }
 
-#cajaHotel h3 {
+.caja-hotel__titulo {
     color: var(--color-text-primary);
     font-size: 2rem;
     padding: 1rem;
@@ -90,11 +91,8 @@ main section {
 
 }
 
-#cajaHotel button,
-#cajaHotel .boton {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.caja-hotel__boton {
+    display: inline-block;
     background-color: var(--primary-color);
     color: var(--background-color);
     border: 1px solid var(--color-border);
@@ -102,7 +100,45 @@ main section {
     width: 30%;
     padding: 0.5rem;
     margin-bottom: 2rem;
-    font: inherit;
+    text-align: center;
     text-decoration: none;
+}
+
+.tareas__lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 2rem;
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.tarea__titulo {
+    min-height: 2.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+.tarea__descripcion {
+    min-height: 2rem;
+    margin-top: 0.25rem;
+    color: var(--color-text-primary);
+}
+
+.tarea__boton {
+    margin-top: 1rem;
+    padding: 0.4rem 0.65rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     cursor: pointer;
 }

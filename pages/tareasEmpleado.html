@@ -7,20 +7,22 @@
     </head>
     <body>
         <header>
-            <nav id="cabecera">
-                <ul>
-                    <li><a href="../index.html"><img src="../assets/icono.png" id="logo" alt="Ir al inicio"></a></li>
-                    <li><a href="" aria-label="Cambiar tema"><img src="../assets/luna.png" id="icono2" alt=""></a></li>
+            <nav class="cabecera">
+                <ul class="cabecera__lista">
+                    <li><a href="../index.html"><img src="../assets/icono.png" class="cabecera__logo" alt="Ir al inicio"></a></li>
+                    <li><a href="" aria-label="Cambiar tema"><img src="../assets/luna.png" class="cabecera__icono" alt=""></a></li>
                     <li><a href="../index.html">Inicio</a></li>
                     <li><p>Usuario</p></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
-                <img src="" alt="">
-                <h1>Mis hoteles</h1>
+            <section class="tareas">
+                <h1>Mis tareas</h1>
+                <div id="listaTareas" class="tareas__lista"></div>
             </section>
         </main>
+
+        <script type="module" src="../js/main.js"></script>
     </body>
 </html>
