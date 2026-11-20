@@ -119,12 +119,14 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    cursor: pointer;
 }
 
 .tarea__titulo {
     min-height: 2.6rem;
     padding: 0;
     margin: 0;
+    font-size: 1rem;
 }
 
 .tarea__descripcion {
@@ -136,6 +138,58 @@ main section {
 .tarea__boton {
     margin-top: 1rem;
     padding: 0.4rem 0.65rem;
+    border: 0;
+    border-radius: 0.25rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+
+.ficha {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 38, 79, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.ficha--abierta {
+    display: flex;
+}
+
+.ficha__contenido {
+    background-color: var(--background-color);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 90%;
+    max-width: 30rem;
+}
+
+.ficha__titulo {
+    font-size: 1.5rem;
+    color: var(--color-text-primary);
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.ficha__descripcion {
+    margin-bottom: 1.5rem;
+    color: #9aa3b5;
+}
+
+.ficha__dato {
+    margin-bottom: 0.5rem;
+    color: var(--color-text-primary);
+}
+
+.ficha__boton {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
     border: 0;
     border-radius: 0.25rem;
     background-color: var(--primary-color);
